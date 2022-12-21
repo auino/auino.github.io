@@ -1,5 +1,69 @@
-<html>
-  <body>
-    Hello world...
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Enrico Cambiaso</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Enrico Cambiaso"/>
+		<meta property="og:image" content="img/avatar-large.jpg"/>
+		<meta property="og:description" content="Personal profile page of Enrico Cambiaso."/>
+		<meta property="og:url" content="<?=$configuration['baseurl']?>" />
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+		<style>
+		html {
+			background-color: #f6f9f9;
+			color: #013162;
+		}
+		a {
+			color: #316192;
+		}
+		div#fork {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		img#fork {
+			max-width: 150px;
+		}
+		a.privacypolicy {
+			color: #ffffff;
+		}
+		.social-icons {
+			font-size: 20px;
+		}
+		.social {
+			width: 20px;
+			height: 20px;
+		}
+		a.social {
+			display: inline;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="fork">
+			<a href="https://github.com/auino/auino.github.io"><img id="fork" src="img/fork-large.png" srcset="img/fork-small.png 480w, img/fork-large.png 1080w" sizes="50vw" alt="Fork this project on GitHub"/></a>
+		</div>
+		<div class="person animated bounceInDown" itemscope itemtype="http://schema.org/Person">
+			<div class="avatar">
+				<img itemprop="image" src="img/avatar-large.jpg" srcset="img/avatar-small.jpg 480w, img/avatar-large.jpg 1080w" sizes="50vw" alt="Avatar of Enrico Cambiaso"/>
+			</div>
+			<div class="content">
+				<h1 class="title" itemprop="name">Enrico<br/>Cambiaso</h1>
+				<p itemprop="jobTitle">
+					Ph.D in computer science
+				</p>
+				<ul class="social-icons">
+					<li><a class="social" href="https://github.com/auino" title="GitHub" target="_new"><i class="fab fa-github"></i></a></li>
+					<li><a class="social" href="https://linkedin.com/in/enricocambiaso" title="LinkedIn" target="_new"><i class="fab fa-linkedin"></i></a></li>
+					<li><a class="social" href="https://twitter.com/auino" title="Twitter" target="_new"><i class="fab fa-twitter-square"></i></a></li>
+				</ul>
+				<p>Want to contact me? <a href="mailto:enrico.cambiaso@gmail.com?subject=[Auino website]">Email me</a>.</p>
+			</div>
+		</div>
+	</body>
 </html>
